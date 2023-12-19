@@ -2,9 +2,9 @@ import cv2
 import numpy as np
 
 # Load YOLO model and configuration
-net = cv2.dnn.readNet(r"C:\resources\Fall 2023\Robot Perception\HW2\yolov3.weights", r"C:\resources\Fall 2023\Robot Perception\HW2\yolov3.cfg")
+net = cv2.dnn.readNet(r".\yolov3.weights", r".\yolov3.cfg")
 classes = []
-with open(r"C:\resources\Fall 2023\Robot Perception\HW2\coco.names", "r") as f:
+with open(r".\coco.names", "r") as f:
     classes = [line.strip() for line in f]
     print(classes)
 # Get output layer names
@@ -12,8 +12,7 @@ layer_names = net.getUnconnectedOutLayersNames()
 
 
 # Open video capture
-# cap = cv2.VideoCapture(r"C:\resources\Fall 2023\Robot Perception\HW2\tracking.mp4")  # Replace with your video file
-cap = cv2.VideoCapture(r"C:\Users\TAARUN\Downloads\pexels-german-korb-19107617 (Original).mp4")
+cap = cv2.VideoCapture(r"video.mp4")
 # Get the video's width, height, and frames per second (fps)
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
