@@ -15,5 +15,5 @@ YOLO, which stands for "You Only Look Once," is a popular object detection algor
 * labels
 
 ## Visualization
-
+https://github.com/Taarun-Srinivas/Object-Tracking-using-YOLO/assets/52371207/bbc0831f-5dc3-4420-89f2-ac19135cbb15
 
